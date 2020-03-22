@@ -1,0 +1,29 @@
+{
+  "name": "actividades",
+  "base": "PersistedModel",
+  "idInjection": false,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "_id": {
+      "type": "string",
+      "id": "true" 
+    },
+    "nombre": {
+      "type": "string",
+      "required": true
+    },
+    "idCuenta": {
+      "type": "string"
+    },
+    "estado": {
+      "type": "boolean",
+      "default": true
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

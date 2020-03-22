@@ -1,0 +1,43 @@
+{
+  "name": "detalleActividad",
+  "base": "PersistedModel",
+  "idInjection": false,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "_id": {
+      "type": "string",
+      "id": "true" 
+    },
+    "idCuenta": {
+      "type": "string",
+      "required": true
+    },
+    "idProgramacionEquipo": {
+      "type": "string",
+      "required": true
+    },
+    "inicio": {
+      "type": "date",
+      "required": true
+    },
+    "fin": {
+      "type": "date",
+      "required": true
+    },
+    "costoHr": {
+      "type": "number",
+      "required": true
+    },
+    "estado": {
+      "type": "boolean",
+      "required": true,
+      "default": true
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

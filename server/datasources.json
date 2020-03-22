@@ -1,0 +1,17 @@
+{
+  "db": {
+    "name": "db",
+    "connector": "memory"
+  },
+  "tempoApp": {
+    "host": "cluster0-g3yej.mongodb.net",
+    "port": 27017,
+    "url": "mongodb+srv://lesly:Mejia1608@cluster0-g3yej.mongodb.net/tempoApp?retryWrites=true&w=majority",
+    "database": "tempoApp",
+    "password": "Mejia1608",
+    "name": "tempoApp",
+    "user": "lesly",
+    "useNewUrlParser": true,
+    "connector": "mongodb"
+  }
+}

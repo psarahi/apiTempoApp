@@ -1,0 +1,48 @@
+{
+  "name": "programacionProyecto",
+  "base": "PersistedModel",
+  "idInjection": false,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "_id": {
+      "type": "string",
+      "id": "true" 
+    },
+    "idCuenta": {
+      "type": "string",
+      "required": true
+    },
+    "idProyecto": {
+      "type": "string",
+      "required": true
+    },
+    "idActividad": {
+      "type": "string",
+      "required": true
+    },
+    "tiempoProyectado": {
+      "type": "number",
+      "required": true
+    },
+    "tiempoReal": {
+      "type": "number"
+    },
+    "presupuestoProyectado": {
+      "type": "number"
+    },
+    "presupuestoReal": {
+      "type": "number"
+    },
+    "estado": {
+      "type": "boolean",
+      "required": true,
+      "default": true
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

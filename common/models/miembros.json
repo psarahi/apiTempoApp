@@ -1,0 +1,56 @@
+{
+  "name": "miembros",
+  "base": "PersistedModel",
+  "idInjection": false,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "_id": {
+      "type": "string",
+      "id": "true"
+    },
+    "idCuenta": {
+      "type": "string",
+      "required": true
+    },
+    "nombre": {
+      "type": "string",
+      "required": true
+    },
+    "apellido": {
+      "type": "string"
+    },
+    "usuario": {
+      "type": "string"
+    },
+    "password": {
+      "type": "string"
+    },
+    "correo": {
+      "type": "string",
+      "required": true
+    },
+    "costoHr": {
+      "type": "number",
+      "required": true
+    },
+    "perfil": {
+      "type": "string",
+      "required": true,
+      "default": 3
+    },
+    "expertis": {
+      "type": "string"
+    },
+    "estado": {
+      "type": "boolean",
+      "required": true,
+      "default": true
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

@@ -1,0 +1,47 @@
+{
+  "name": "proyectos",
+  "base": "PersistedModel",
+  "idInjection": false,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "_id": {
+      "type": "string",
+      "id": "true" 
+    },
+    "idCuenta": {
+      "type": "string",
+      "required": true
+    },
+    "nombreProyecto": {
+      "type": "string",
+      "required": true
+    },
+    "responsable": {
+      "type": "string"
+    },
+    "tiempoProyectadoPro": {
+      "type": "number",
+      "required": true
+    },
+    "tiempoRealPro": {
+      "type": "number"
+    },
+    "presupuestoProyectadoPro": {
+      "type": "number"
+    },
+    "presupuestoRealPro": {
+      "type": "number"
+    },
+    "estado": {
+      "type": "boolean",
+      "required": true,
+      "default": true
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

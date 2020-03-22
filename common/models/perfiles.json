@@ -1,0 +1,27 @@
+{
+  "name": "perfiles",
+  "base": "PersistedModel",
+  "idInjection": false,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "_id": {
+      "type": "string",
+      "id": "true" 
+    },
+    "nombre": {
+      "type": "string",
+      "required": true
+    },
+    "estado": {
+      "type": "boolean",
+      "required": true,
+      "default": true
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

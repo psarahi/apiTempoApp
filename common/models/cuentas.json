@@ -1,0 +1,51 @@
+{
+  "name": "cuentas",
+  "base": "PersistedModel",
+  "idInjection": false,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "_id": {
+      "type": "string",
+      "id": "true" 
+    },
+    "nombre": {
+      "type": "string",
+      "required": true
+    },
+    "apellido": {
+      "type": "string"
+    },
+    "usuario": {
+      "type": "string",
+      "required": true
+    },
+    "password": {
+      "type": "string",
+      "required": true
+    },
+    "empresa": {
+      "type": "string"
+    },
+    "lugar": {
+      "type": "string"
+    },
+    "fechaRegistro": {
+      "type": "date",
+      "required": true
+    },
+    "perfil": {
+      "type": "string",
+      "required": true
+    },
+    "estado": {
+      "type": "boolean",
+      "default": true
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}
